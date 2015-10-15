@@ -1,32 +1,25 @@
 # installation sur asus-linux for test
 
-Some softwares and libraries are required to work on your overlay. It’s mostly Python, MySQL, Redis as well as XML, XSLT and graphical libraries. Io.js is solely required for development purposes.
-
 $ python --version
-Python 2.7.5+
+  # Python 2.7.5+
 $ sudo apt-get update
 $ sudo apt-get install build-essential git redis-server \
-                       libmysqlclient-dev libxml2-dev libxslt1-dev \
-                       libjpeg-dev libfreetype6-dev libtiff5-dev \
-                       libffi-dev libssl-dev \
-                       software-properties-common python-dev \
-                       virtualenvwrapper
+  libmysqlclient-dev libxml2-dev libxslt1-dev \
+  libjpeg-dev libfreetype6-dev libtiff5-dev \
+  libffi-dev libssl-dev \
+  software-properties-common python-dev \
+  virtualenvwrapper
+  
 $ sudo -H pip install -U virtualenvwrapper pip
 $ source .bashrc
 
-# Install MySQL server, and keep the root password somewhere safe.
 $ sudo apt-get install mysql-server
 
-# Install io.js
 $ curl -sL https://deb.nodesource.com/setup_iojs_2.x | sudo bash -
 $ sudo apt-get install iojs
 
-
-3.1.2.2. The virtual environment
-
-Python development usually recommends to work within a virtualenv, which creates an isolated environment where the libraries required by one will not intervene with the system ones or the ones of another system. We are using virtualenvwrapper but nothing prevents your from directly using virtualenv you are familiar with it.
-
 $ mkvirtualenv 
+
 3.1.2.2. The virtual environment
 
 Python development usually recommends to work within a virtualenv, which creates an isolated environment where the libraries required by one will not intervene with the system ones or the ones of another system. We are using virtualenvwrapper but nothing prevents your from directly using virtualenv you are familiar with it.
