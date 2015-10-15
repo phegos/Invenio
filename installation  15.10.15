@@ -1,5 +1,7 @@
 # installation sur asus-linux for test
 
+# https://invenio.readthedocs.org/en/latest/configuration/overlay.html#overlay 
+
 $ python --version
   # Python 2.7.5+
 $ sudo apt-get update
@@ -19,6 +21,9 @@ $ curl -sL https://deb.nodesource.com/setup_iojs_2.x | sudo bash -
 $ sudo apt-get install iojs
 
 
+# global bower installation
+$ sudo su -c "npm install -g bower"
+
 
 $ mkvirtualenv phegosoverlay
 (phegosoverlay)$ # we are in your overlay environment now and
@@ -28,5 +33,10 @@ $ # Now join it back, recreating it would fail.
 $ workon phegosoverlay
 (phegosoverlay)$ # That's all there is to know about it.
 
+(phegosoverlay)$ cdvirtualenv
+(phegosoverlay)$ mkdir -p src/phegosoverlay
+(phegosoverlay)$ cd src/phegosoverlay
+(phegosoverlay)$ edit setup.py
 
+(phegosoverlay)$ pip install -e .
 
