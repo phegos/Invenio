@@ -7,11 +7,11 @@ Python 2.7.5+
 $ sudo apt-get update
 $ sudo apt-get install build-essential git redis-server \
                        libmysqlclient-dev libxml2-dev libxslt1-dev \
-                       libjpeg-dev libfreetype6-dev libtiff-dev \
+                       libjpeg-dev libfreetype6-dev libtiff5-dev \
                        libffi-dev libssl-dev \
                        software-properties-common python-dev \
                        virtualenvwrapper
-$ sudo pip install -U virtualenvwrapper pip
+$ sudo -H pip install -U virtualenvwrapper pip
 $ source .bashrc
 
 # Install MySQL server, and keep the root password somewhere safe.
