@@ -18,25 +18,15 @@ $ sudo apt-get install mysql-server
 $ curl -sL https://deb.nodesource.com/setup_iojs_2.x | sudo bash -
 $ sudo apt-get install iojs
 
-$ mkvirtualenv 
 
-3.1.2.2. The virtual environment
 
-Python development usually recommends to work within a virtualenv, which creates an isolated environment where the libraries required by one will not intervene with the system ones or the ones of another system. We are using virtualenvwrapper but nothing prevents your from directly using virtualenv you are familiar with it.
-
-$ mkvirtualenv myoverlay
-(myoverlay)$ # we are in your overlay environment now and
-(myoverlay)$ # can leave it using the deactivate command.
-(myoverlay)$ deactivate
+$ mkvirtualenv phegosoverlay
+(phegosoverlay)$ # we are in your overlay environment now and
+(phegosoverlay)$ # can leave it using the deactivate command.
+(phegosoverlay)$ deactivate
 $ # Now join it back, recreating it would fail.
-$ workon myoverlay
-(myoverlay)$ # That's all there is to know about it.
+$ workon phegosoverlay
+(phegosoverlay)$ # That's all there is to know about it.
 
 
-(myoverlay)$ # we are in your overlay environment now and
-(myoverlay)$ # can leave it using the deactivate command.
-(myoverlay)$ deactivate
-$ # Now join it back, recreating it would fail.
-$ workon myoverlay
-(myoverlay)$ # That's all there is to know about it.
 
